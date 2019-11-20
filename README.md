@@ -5,6 +5,8 @@ Easily deploy Express.js applications to Tencent Cloud's serverless infrastructu
 &nbsp;
 <img align="right" width="400" src="https://s3.amazonaws.com/assets.general.serverless.com/component_express_tencent/express_demo_logo_light.gif" />
 
+* This version is an experience version and does not guarantee stability.
+
 * [请点击这里查看中文版部署文档](./README_CN.md)
 
 &nbsp;
