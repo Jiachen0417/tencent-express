@@ -75,7 +75,7 @@ module.exports = app
 # serverless.yml
 
 express:
-  component: '@serverless/tencent-express'
+  component: '@tencent-serverless/tencent-express-beta'
   inputs:
     region: ap-shanghai
 

@@ -7,7 +7,7 @@
 
 express:
   region: ap-shanghai
-  component: '@serverless/tencent-express'
+  component: '@tencent-serverless/tencent-express-beta'
   inputs:
     region: ap-shanghai
     functionName: eslam-function

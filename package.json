@@ -1,5 +1,5 @@
 {
-  "name": "@serverless/tencent-express",
+  "name": "@tencent-serverless/tencent-express-beta",
   "description": "Tencent Express Component",
   "version": "1.2.2",
   "main": "./serverless.js",
@@ -14,8 +14,8 @@
   "license": "Apache",
   "dependencies": {
     "@serverless/core": "^1.0.0",
-    "@serverless/tencent-apigateway": "^1.2.0",
-    "@serverless/tencent-scf": "^1.1.0"
+    "@tencent-serverless/tencent-apigateway-beta": "^1.2.0",
+    "@tencent-serverless/tencent-scf-beta": "^1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",

@@ -39,8 +39,8 @@ class TencentExpress extends Component {
       throw new Error(`app.js not found in ${inputs.codeUri}`)
     }
 
-    const tencentCloudFunction = await this.load('@serverless/tencent-scf')
-    const tencentApiGateway = await this.load('@serverless/tencent-apigateway')
+    const tencentCloudFunction = await this.load('@tencent-serverless/tencent-scf-beta')
+    const tencentApiGateway = await this.load('@tencent-serverless/tencent-apigateway-beta')
 
     if (inputs.functionConf) {
       inputs.timeout = inputs.functionConf.timeout ? inputs.functionConf.timeout : 3
@@ -97,8 +97,8 @@ class TencentExpress extends Component {
   }
 
   async remove() {
-    const tencentCloudFunction = await this.load('@serverless/tencent-scf')
-    const tencentApiGateway = await this.load('@serverless/tencent-apigateway')
+    const tencentCloudFunction = await this.load('@tencent-serverless/tencent-scf-beta')
+    const tencentApiGateway = await this.load('@tencent-serverless/tencent-apigateway-beta')
 
     await tencentCloudFunction.remove()
     await tencentApiGateway.remove()
