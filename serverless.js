@@ -40,7 +40,7 @@ class TencentExpress extends Component {
     }
 
     const tencentCloudFunction = await this.load('@tencent-serverless/tencent-scf-beta')
-    const tencentApiGateway = await this.load('@tencent-serverless/tencent-apigateway-beta')
+    const tencentApiGateway = await this.load('/Users/dfounderliu/Desktop/component/experience/tencent-apigateway')
 
     if (inputs.functionConf) {
       inputs.timeout = inputs.functionConf.timeout ? inputs.functionConf.timeout : 3
