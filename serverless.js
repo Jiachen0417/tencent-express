@@ -40,7 +40,9 @@ class TencentExpress extends Component {
     }
 
     const tencentCloudFunction = await this.load('@tencent-serverless/tencent-scf-beta')
-    const tencentApiGateway = await this.load('/Users/dfounderliu/Desktop/component/experience/tencent-apigateway')
+    const tencentApiGateway = await this.load(
+      '/Users/dfounderliu/Desktop/component/experience/tencent-apigateway'
+    )
 
     if (inputs.functionConf) {
       inputs.timeout = inputs.functionConf.timeout ? inputs.functionConf.timeout : 3
@@ -87,7 +89,7 @@ class TencentExpress extends Component {
 
     const tencentApiGatewayOutputs = await tencentApiGateway(apigwParam)
     const outputs = {
-      region: inputs.region || "ap-guangzhou",
+      region: inputs.region || 'ap-guangzhou',
       functionName: inputs.name,
       apiGatewayServiceId: tencentApiGatewayOutputs.serviceId,
       url: `${tencentApiGatewayOutputs.protocol}://${tencentApiGatewayOutputs.subDomain}/${tencentApiGatewayOutputs.environment}/`
